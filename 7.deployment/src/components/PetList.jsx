@@ -2,8 +2,8 @@ import React from 'react'
 import PetCard from './PetCard'
 import { useLoaderData } from 'react-router-dom';
 
-const PetList = ({ favorites, onFavorites }) => {
-  const pets = useLoaderData();
+const PetList = ({ pets, favorites, onFavorites }) => {
+
 
   return (
     <div className="pets-grid">

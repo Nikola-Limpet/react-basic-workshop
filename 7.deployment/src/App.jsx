@@ -46,12 +46,13 @@ const App = () => {
     });
   };
 
+  // console.log(pets);
   // Filter pets based on search
   const filteredPets = pets.filter(pet =>
     pet.name?.toLowerCase().includes(searchTerm.toLowerCase())
     || pet.breed?.toLowerCase().includes(searchTerm.toLowerCase())
-    || pet.category?.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  console.log(filteredPets);
 
   if (isLoading) {
     return (

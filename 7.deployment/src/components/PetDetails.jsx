@@ -1,14 +1,25 @@
 
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import PetCarousel from "./PetCarousel";
+import { useState } from "react";
 
 const PetDetails = () => {
   const navigate = useNavigate();
   const pet = useLoaderData();
+  const [isLoading, setIsLoading] = useState(false);
 
+
+
+  if (isLoading) {
+    return (
+      <div className="container">
+        <div className="loading-spinner">
+          <div className="spinner"></div>
+        </div>
+      </div>
+    );
+  }
   const { id, name, breed, age, description, images, category, color } = pet;
-
-
 
 
   if (!pet) return null;
@@ -17,7 +28,7 @@ const PetDetails = () => {
       <div className="pet-details">
         <button
           className="close-btn"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/')}
           aria-label="Close details"
         >
           ×
