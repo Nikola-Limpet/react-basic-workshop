@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
+
+const API_URL = 'https://pets-api-ac6f.onrender.com/pets'
+
 const AdoptionForm = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -23,39 +27,37 @@ const AdoptionForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    setError('')
 
-    // Basic validation
     if (!formData.firstName || !formData.lastName || !formData.email) {
       setError('Please fill in all required fields')
+      setIsSubmitting(false)
       return
     }
-
     try {
-      const response = await fetch('https://pets-api-ac6f.onrender.com/pets', {
+      const response = await fetch(`${API_URL}/${id}/adopt`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, petId: id, })
+        body: JSON.stringify(formData)
       })
 
-      // Then, update the pet's adoption status
-      const petResponse = await fetch(`https://pets-api-ac6f.onrender.com/pets/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ isAdopted: true })
-      })
-
-      if (!petResponse.ok) {
-        throw new Error('Failed to update pet status')
+      if (!response.ok) {
+        throw new Error('Failed to submit adoption request')
       }
-      // Navigate back to home on success
+
       navigate('/', {
         state: { message: 'Adoption application submitted successfully!' }
       })
 
     } catch (error) {
-      setError('Failed to submit adoption request')
+      setError(error.message || 'Failed to submit adoption request')
+    } finally {
+      setIsSubmitting(false)
     }
+
   }
+
 
   return (
     <div className="adoption-form-container">
@@ -120,8 +122,12 @@ const AdoptionForm = () => {
           />
         </div>
 
-        <button type="submit" className="submit-btn">
-          Submit Application
+        <button
+          type="submit"
+          className="submit-btn"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? 'Submitting...' : 'Submit Application'}
         </button>
       </form>
     </div>
