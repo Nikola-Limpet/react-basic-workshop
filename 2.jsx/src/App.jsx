@@ -13,7 +13,6 @@ const App = () => {
           <PetCard />
           <PetCard />
           <PetCard />
-
         </div>
       </main>
       <Footer />
