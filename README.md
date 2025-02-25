@@ -1,64 +1,62 @@
-# React Workshop: Build an Adopt-a-Pet App
+# React Workshop: Building a Pet Adoption App
 
-## Prerequisites
+## Schedule: 1:00 PM - 4:00 PM
 
-- Basic HTML, CSS, JavaScript knowledge
-- Node.js installed
-- Code editor (VS Code recommended)
-- Workshop Schedule (4 hours total)
+### 1. Setup & Introduction (15 min) | 1:00 - 1:15 PM
 
-1. Setup & Introduction (30 min)
-
+- Welcome and introduction
 - Create React app using Vite
-- Project structure overview
-- Component-based architecture intro
+- Project structure walkthrough
+- Component architecture overview
 
-2. Components & JSX (45 min)
+### 2. Components & JSX (25 min) | 1:15 - 1:40 PM
 
 - Creating functional components
-- JSX syntax
-- Building the app header and navigation
-- Creating reusable PetCard component
+- JSX syntax and expressions
+- Building app header and footer
+- Creating our first PetCard component
 
-3. Props & Component Composition (45min)
+### 3. Props & Component Composition (25 min) | 1:40 - 2:05 PM
 
-- Passing data between components
-- Props destructuring
-- Building PetList component
-- Implementing PetCard grid
+- Understanding props flow
+- Props destructuring techniques
+- Building the PetList component
+- Creating the pet grid layout
 
-4. State & Events (45 min)
+### 4. State & Events (25 min) | 2:05 - 2:30 PM
 
 - useState hook introduction
-- Event handling
-- Implementing search/filter functionality
-- Adding favorites feature
+- Event handling in React
+- Implementing search functionality
+- Building the favorites feature
 
-5. Effects & Data Fetching (45 min)
+### BREAK (10 min) | 2:30 - 2:40 PM
 
-- useEffect hook
-- Fetching pet data from mock API
-- Loading states
-- Error handling
+- Quick refreshment break
+- Q&A for topics covered so far
 
-6. Advanced Features & Carousel (45 min)
+### 5. Effects & Data Fetching (25 min) | 2:40 - 3:05 PM
 
-   - Implementing pet details page
-   - Building image carousel component
-   - Managing carousel state
-   - Adding touch/swipe support
-   - Transition animations
+- useEffect hook explained
+- Fetching data from our mock API
+- Implementing loading states
+- Error handling patterns
 
-7. Final Project & Advanced Topics (30 min)
-   - React Router integration
-   - Form handling for adoption
-   - Best practices and tips
-   - Deployment considerations
+### 6. Advanced Features (30 min) | 3:05 - 3:35 PM
 
-# move fav to it own state
+- Building the pet details page
+- Creating an image carousel component
+- Managing carousel state
+- Adding basic animations
 
-### Hands-on Projects:  
+### 7. Project Completion & Next Steps (15 min) | 3:35 - 3:50 PM
 
-- Create basic component structure
-- Implement pet listing with mock data
-- Add search/filter functionality
+- React Router basics
+- Form handling overview
+- Best practices review
+- Deployment options
+
+### Q&A Session (10 min) | 3:50 - 4:00 PM
+
+- Open questions
+- Additional resources

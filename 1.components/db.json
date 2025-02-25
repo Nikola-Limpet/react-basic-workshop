@@ -1,0 +1,343 @@
+{
+  "pets": [
+    {
+      "id": "1",
+      "category": "Dogs",
+      "name": "Max",
+      "breed": "Golden Retriever",
+      "age": 3,
+      "isAdopted": true,
+      "image": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181524/202104golden-retriever-puppy.jpg",
+      "images": [
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181524/202104golden-retriever-puppy.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181511/202104golden-retriever-dog-breed-swimming.jpg",
+          "order": 2
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181515/202104golden-retriever-dog-breed-playing-fetch.jpg",
+          "order": 3
+        }
+      ],
+      "color": "Golden",
+      "description": "Friendly family dog who loves swimming and playing fetch."
+    },
+    {
+      "id": "2",
+      "category": "Dogs",
+      "name": "Buddy",
+      "breed": "Labrador Retriever",
+      "age": 2,
+      "isAdopted": false,
+      "image": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181343/202104labrador-retriever-yellow-puppy.jpg",
+      "images": [
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181343/202104labrador-retriever-yellow-puppy.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181350/202104labrador-retriever-dog-breed-yellow-lab-in-meadow.jpg",
+          "order": 2
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11181347/202104labrador-retriever-dog-breed-chocolate.jpg",
+          "order": 3
+        }
+      ],
+      "color": "Yellow",
+      "description": "Energetic companion great with children and other pets."
+    },
+    {
+      "id": "3",
+      "category": "Dogs",
+      "name": "Daisy",
+      "breed": "French Bulldog",
+      "age": 4,
+      "isAdopted": false,
+      "image": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11180042/202105french-bulldog-sleepy.jpg",
+      "images": [
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11180042/202105french-bulldog-sleepy.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11180109/202106French-Bulldog-FeaturedImage.jpg",
+          "order": 3
+        },
+        {
+          "url": "https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11180057/202105french-bulldog-walk.jpg",
+          "order": 2
+        }
+      ],
+      "color": "Fawn",
+      "description": "Affectionate couch potato who enjoys short walks."
+    },
+    {
+      "id": "4",
+      "category": "Cats",
+      "name": "Luna",
+      "breed": "Siamese",
+      "age": 2,
+      "isAdopted": false,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg",
+          "order": 1
+        }
+      ],
+      "color": "Cream",
+      "description": "Vocal and intelligent cat that forms strong bonds."
+    },
+    {
+      "id": "5",
+      "category": "Cats",
+      "name": "Simba",
+      "breed": "Maine Coon",
+      "age": 1,
+      "isAdopted": false,
+      "image": "https://www.thesprucepets.com/thmb/BqNn28WROha1J9j1G3dVValShP8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1189893683-e0ff70596b3b4f0687ba573e5a671f74.jpg",
+      "images": [
+        {
+          "url": "https://www.thesprucepets.com/thmb/BqNn28WROha1J9j1G3dVValShP8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1189893683-e0ff70596b3b4f0687ba573e5a671f74.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://cdn.petcloud.com.au/d/wp-content/uploads/2024/06/03124226/Maine-Coon-Cat.png",
+          "order": 2
+        }
+      ],
+      "color": "Brown",
+      "description": "Gentle giant with luxurious fur and playful nature."
+    },
+    {
+      "id": "6",
+      "category": "Cats",
+      "name": "Misty",
+      "breed": "Ragdoll",
+      "age": 3,
+      "isAdopted": false,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
+      "images": [
+        {
+          "url": "https://cfa.org/wp-content/uploads/2024/06/RDportrait.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
+          "order": 2
+        }
+      ],
+      "color": "Lava",
+      "description": "Fluffy lap cat that goes limp when held."
+    },
+    {
+      "id": "7",
+      "category": "Birds",
+      "name": "Kiwi",
+      "breed": "Parakeet",
+      "age": 1,
+      "isAdopted": false,
+      "image": "https://animalwelfaresociety.org/wp-content/uploads/2024/08/awsmaine_FunFactsParakeetsSMALLS2_0824.jpg",
+      "images": [
+        {
+          "url": "https://animalwelfaresociety.org/wp-content/uploads/2024/08/awsmaine_FunFactsParakeetsSMALLS2_0824.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://as1.ftcdn.net/jpg/02/47/32/94/1000_F_247329447_fHLa98OlvXikTbHFvkXksgZYjdMjn0eI.webp",
+          "order": 2
+        }
+      ],
+      "color": "Green",
+      "description": "Colorful talker who enjoys mimicking household sounds."
+    },
+    {
+      "id": "8",
+      "category": "Birds",
+      "name": "Mango",
+      "breed": "Cockatiel",
+      "age": 2,
+      "isAdopted": false,
+      "image": "https://www.zooplus.co.uk/magazine/wp-content/uploads/2018/05/Cockatiels.jpg",
+      "images": [
+        {
+          "url": "https://www.zooplus.co.uk/magazine/wp-content/uploads/2018/05/Cockatiels.jpg",
+          "order": 1
+        }
+      ],
+      "color": "Yellow",
+      "description": "Whistle-loving bird with striking orange cheeks."
+    },
+    {
+      "id": "9",
+      "category": "Fish",
+      "name": "Bubbles",
+      "breed": "Betta",
+      "age": 1,
+      "isAdopted": false,
+      "image": "https://houstonaqua.com/cdn/shop/files/DSC07717.jpg?v=1698881066",
+      "images": [
+        {
+          "url": "https://houstonaqua.com/cdn/shop/files/DSC07717.jpg?v=1698881066",
+          "order": 1
+        },
+        {
+          "url": "https://houstonaqua.com/cdn/shop/files/DSC07731.jpg?v=1698881066",
+          "order": 2
+        },
+        {
+          "url": "https://houstonaqua.com/cdn/shop/files/DSC07709.jpg?v=1698881061",
+          "order": 3
+        }
+      ],
+      "color": "Blue",
+      "description": "Vibrant solitary fish with flowing colorful fins."
+    },
+    {
+      "id": "10",
+      "category": "Fish",
+      "name": "Goldie",
+      "breed": "Goldfish",
+      "age": 2,
+      "isAdopted": false,
+      "image": "https://www.thesprucepets.com/thmb/lGV2pUMd2xBwuLolOcrDfj1-fNg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1370690855-691460005dd7426d9d716ed9c2b6ad8f.jpg",
+      "images": [
+        {
+          "url": "https://www.thesprucepets.com/thmb/lGV2pUMd2xBwuLolOcrDfj1-fNg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1370690855-691460005dd7426d9d716ed9c2b6ad8f.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://5.imimg.com/data5/ANDROID/Default/2021/4/BO/NU/AQ/12128902/product-jpeg-1000x1000.jpg",
+          "order": 2
+        },
+        {
+          "url": "https://5.imimg.com/data5/ANDROID/Default/2021/4/BO/NU/AQ/12128902/product-jpeg-1000x1000.jpg",
+          "order": 3
+        }
+      ],
+      "color": "Gold",
+      "description": "Classic pond fish that recognizes its caretakers."
+    },
+    {
+      "id": "11",
+      "category": "Rabbits",
+      "name": "Cotton",
+      "breed": "Mini Lop",
+      "age": 1,
+      "isAdopted": true,
+      "image": "https://www.everypaw.com/.imaging/mte/everypaw/2880x1212/dam/rabbit-breed-guides/miniature-lop/miniature-lop-banner.jpg/jcr:content/miniature-lop-banner.jpg",
+      "images": [
+        {
+          "url": "https://everbreed.com/wp-content/uploads/2024/04/Miniature_Lop_-_Front_View-e1712761788554.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://www.everypaw.com/.imaging/mte/everypaw/2880x1212/dam/rabbit-breed-guides/miniature-lop/miniature-lop-banner.jpg/jcr:content/miniature-lop-banner.jpg",
+          "order": 2
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/2016/2903/files/Untitled_design_51_480x480.jpg?v=1686119790",
+          "order": 3
+        }
+      ],
+      "color": "White",
+      "description": "Floppy-eared bunny that loves to explore and dig."
+    },
+    {
+      "id": "12",
+      "category": "Rabbits",
+      "name": "Oreo",
+      "breed": "Dutch Rabbit",
+      "age": 2,
+      "isAdopted": false,
+      "image": "https://a-z-animals.com/media/2022/01/iStock-119198833.jpg",
+      "images": [
+        {
+          "url": "https://a-z-animals.com/media/2022/01/iStock-119198833.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://animalcorner.org/wp-content/uploads/2020/10/Dutch-Rabbit-3.jpg",
+          "order": 2
+        }
+      ],
+      "color": "Black and White",
+      "description": "Distinctive black-and-white marked jumper."
+    },
+    {
+      "id": "13",
+      "category": "Rabbits",
+      "name": "Thumper",
+      "breed": "Flemish Giant",
+      "age": 1,
+      "isAdopted": false,
+      "image": "https://www.zoomontana.org/images/img_8AtAQrWt74QtJ6anMu3Qht/flemish-giant-rabbit.jpg?fit=outside&w=1600&dpr=2",
+      "images": [
+        {
+          "url": "https://everbreed.com/wp-content/uploads/2024/04/flemish-giant-rabbit-pet-animal-5748469.jpg",
+          "order": 1
+        },
+        {
+          "url": "https://www.zoomontana.org/images/img_8AtAQrWt74QtJ6anMu3Qht/flemish-giant-rabbit.jpg?fit=outside&w=1600&dpr=2",
+          "order": 2
+        },
+        {
+          "url": "https://image.petmd.com/files/styles/978x550/public/2023-07/Flemish.giant_.jpg?w=2048&q=75",
+          "order": 3
+        }
+      ],
+      "color": "Gray",
+      "description": "Gentle giant rabbit reaching up to 20 pounds."
+    },
+    {
+      "id": "efc8",
+      "firstName": "dsadsa",
+      "lastName": "sadada",
+      "email": "ssads@gmas.com",
+      "phone": "123312",
+      "address": "adasdadadad",
+      "petId": "1"
+    },
+    {
+      "id": "6afc",
+      "firstName": "Nikola",
+      "lastName": "sadfsdf",
+      "email": "fdasfsa@gmail.com",
+      "phone": "1121431",
+      "address": "dsdfasdafsad",
+      "petId": "11"
+    },
+    {
+      "id": "c6ea",
+      "firstName": "sdadadadasd",
+      "lastName": "dadsadsad",
+      "email": "dadsdada@gmail.com",
+      "phone": "121231",
+      "address": "sdsadadasds",
+      "petId": "11"
+    },
+    {
+      "id": "0c68",
+      "firstName": "dqwdwqwd",
+      "lastName": "asdad",
+      "email": "asda@gmail.com",
+      "phone": "asdadadadsaq",
+      "address": "asdsasdasd",
+      "petId": "11",
+      "isAdotped": true
+    },
+    {
+      "id": "8d73",
+      "firstName": "saada",
+      "lastName": "dasdada",
+      "email": "adaad@gmail.com",
+      "phone": "212312",
+      "address": "dasdadad",
+      "petId": "11"
+    }
+  ]
+}
