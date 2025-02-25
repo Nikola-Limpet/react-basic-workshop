@@ -1,15 +1,43 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const PetCard = ({ pet }) => {
   const { id } = pet;
   const { category, name, breed, age, image, description, isAdopted } = pet;
-  const [isFavorite, setIsFavorite] = useState(false);
 
+  // 
+  const [isFavorite, setIsFavorite] = useState(() => {
+    const savedFavorites = localStorage.getItem('petFavorites');
+
+
+    const favoritesArray = savedFavorites ? JSON.parse(savedFavorites) : [];
+    return favoritesArray.includes(id);
+  });
+
+
+  // Handle favorite toggle
   const handleClickFavorite = (e) => {
-    e.stopPropagation();
-    setIsFavorite(!isFavorite);
-  }
+    setIsFavorite(prev => !prev);
+  };
+
+  // Update localStorage when favorite status changes
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem('petFavorites');
+    const favoritesArray = savedFavorites ? JSON.parse(savedFavorites) : [];
+
+    if (isFavorite && !favoritesArray.includes(id)) {
+      // Add to favorites
+      localStorage.setItem('petFavorites', JSON.stringify([...favoritesArray, id]));
+    } else if (!isFavorite && favoritesArray.includes(id)) {
+      // Remove from favorites
+      localStorage.setItem(
+        'petFavorites',
+        JSON.stringify(favoritesArray.filter(favId => favId !== id))
+      );
+    }
+  }, [isFavorite, id]);
+
   return (
     <div className='pet-card'>
       <div className='pet-image-container'>
@@ -34,6 +62,7 @@ const PetCard = ({ pet }) => {
           >
             {isFavorite ? '❤️' : '🤍'}
           </button>
+
         </div>
       </div>
 

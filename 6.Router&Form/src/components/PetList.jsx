@@ -1,16 +1,17 @@
 import React from 'react'
 import PetCard from './PetCard'
 
-const PetList = ({ pets, favorites, onFavorites }) => {
+const PetList = ({ pets }) => {
   return (
     <div className="pets-grid">
-      {pets?.map(pet => (
-        <PetCard
+      {pets?.map((pet) => (
+        <div
           key={pet.id}
-          pet={pet}
-          isFavorite={favorites.includes(pet.id)}
-          onFavorite={() => onFavorites(pet)}
-        />
+
+          className="pet-card-container"
+        >
+          <PetCard pet={pet} />
+        </div>
       ))}
     </div>
   )
