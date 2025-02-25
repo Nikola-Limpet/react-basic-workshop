@@ -23,4 +23,17 @@ export const router = createBrowserRouter([
   }
 ]);
 
+
+{/* <BrowserRouter>
+<Routes>
+  <Route index path="/" element={<App />} />
+  <Route path="/pets" element={<PetList />} />
+  <Route path="/pets/:id" element={<PetDetail />} />
+  <Route path="/adopt/:id" element={<AdoptionForm />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
+</BrowserRouter> */}
+
+
+
 export default router;
