@@ -37,6 +37,9 @@ const AdoptionForm = () => {
         body: JSON.stringify({ ...formData, petId: id, })
       })
 
+      if (!response.ok) {
+        throw new Error('Failed to submit adoption request')
+      }
       // Then, update the pet's adoption status
       const petResponse = await fetch(`http://localhost:3001/pets/${id}`, {
         method: 'PATCH',
